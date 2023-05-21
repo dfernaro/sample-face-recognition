@@ -38,7 +38,7 @@ export class SampleFaceRecognitionStack extends cdk.Stack {
     // Create a custom IAM policy
     const rekognitionPolicy = new iam.PolicyStatement({
       actions: ["rekognition:CompareFaces"],
-      resources: ["*"], // Adjust the resource ARN to a specific Rekognition resource if necessary
+      resources: ["*"],
     });
 
     // Attach the policy to the Lambda execution role
